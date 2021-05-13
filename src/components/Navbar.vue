@@ -12,7 +12,7 @@
         <div v-if="user">
           <router-link :to="{ name: 'CreatePlaylist' }">Create Playlist</router-link>
           <router-link :to="{ name: 'UserPlaylists' }">My Playlists</router-link>
-          <span class="navbar--wrapper--links--user-name">Hi there, {{ user.displayName }}</span>
+          <span class="navbar--wrapper--links--user-name">Hi there, {{ user.email }}</span>
           <button class="navbar--wrapper--links--logout" @click="handleLogout">Logout</button>
         </div>
         <div v-else>
